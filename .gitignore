@@ -1,3 +1,29 @@
+# Personal Documentations
+handbook/
+docs/personal
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Claude Code personal permission approvals (per machine, never shared)
+.claude/settings.local.json
+
+# App under test: cloned + built Conduit app and its SQLite DB (recreated by `npm run setup`)
+.app/
+
+# Saved login sessions (storageState). Contains auth tokens: treat as secrets.
+.auth/
+
+# Test output
+test-results/
+playwright-report/
+blob-report/
+
+# Miscellaneous
+Build Guide Claude Code + GitHub for the Portfolio Projects.pdf
+
 # Logs
 logs
 *.log
@@ -64,11 +90,6 @@ web_modules/
 
 # Yarn Integrity file
 .yarn-integrity
-
-# dotenv environment variable files
-.env
-.env.*
-!.env.example
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
